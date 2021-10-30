@@ -1,0 +1,54 @@
+#root{ 
+	text-align:center; 
+} 
+.calculator-title{ 
+	font-size:30px;  
+	width: 430px; 
+	padding: 10px; 
+	margin: 20px auto; 
+	border: 2px solid grey;  
+} 
+
+.mainCalc{ 
+	margin:0px auto; 
+	padding:10px 5px; 
+	width: 440px;
+	background-color: black;
+	border: 5px solid #bbb;
+} 
+.screen-row input{ 
+	width: 410px; 
+	background-color: #7d6; 
+	border: 0px; 
+	color: #222; 
+	padding: 10px; 
+	text-align: right;
+	height: 30px; 
+	font-size: 25px;
+} 
+.buttons
+{
+	margin: 10px 5px;
+}
+
+input[type="button"]{ 
+width: 100px; 
+background-color: #ccc; 
+border: 2px solid #222; 
+border-radius: 5px;
+padding: 5px 10px;   
+display: inline-block; 
+font-size: 25px;
+margin: 2px; 
+} 
+
+input[type="button"]:active{ 
+	background-color: #999; 
+} 
+
+#spaceFiller{
+	width: 100px;
+	height: 30px; 
+	float: right;
+	margin: 2px;
+}
