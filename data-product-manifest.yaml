@@ -3,15 +3,16 @@ jobName: testtt
 jobType: DataSets
 developerId: a7213db3-af1d-4810-ac21-e49160b82291
 domain: finance
-alias: ""
+alias: c
 discoveryPort:
   name: testtt
 inputPorts:
   - alias: Excel_1
     isDynamic: true
-    path: ""
-    sheetNames: ""
-    cellAddress: ""
+    path: C:\Users\prakruti.vavdiya\Downloads\b1c1c2.xlsx
+    sheetNames:
+      - Sheet1
+    cellAddress: A2
     optional:
       persistDataFrame: false
       enableDataReconciliation: false
@@ -25,13 +26,13 @@ inputPorts:
     dataProductUrn: ""
 productState:
   isDynamic: true
-  alias: ""
+  alias: c
   retentionVersions: ""
   logicalSchema: ""
   stateStoreType: writeDataFrameToCsv
   isProfilingEnabled: false
-  partitionFiles: 0
-  path: ""
+  partitionFiles: 1
+  path: C:\Users\prakruti.vavdiya\Downloads\b1c1c2.csv
   optional:
     persistDataFrame: false
     advanceOptions:
@@ -43,7 +44,7 @@ productState:
 transformation:
   - isDynamic: true
     alias: Union_1
-    description: ""
+    description: u
     sequence: 3
     inputDataFrame1: Kafka_1
     inputDataFrame2: Excel_1
