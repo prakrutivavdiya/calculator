@@ -1,1 +1,56 @@
-""
+jobId: "1250"
+jobName: testtt
+jobType: DataSets
+developerId: a7213db3-af1d-4810-ac21-e49160b82291
+domain: finance
+alias: ""
+discoveryPort:
+  name: testtt
+inputPorts:
+  - alias: Excel_1
+    isDynamic: true
+    path: ""
+    sheetNames: ""
+    cellAddress: ""
+    optional:
+      persistDataFrame: false
+      enableDataReconciliation: false
+      enforceSchema: false
+      dataSetUrn: ""
+    schema:
+      - columnName: ""
+        dataType: ""
+        nullable: false
+    type: inputXLS
+    dataProductUrn: ""
+productState:
+  isDynamic: true
+  alias: ""
+  retentionVersions: ""
+  logicalSchema: ""
+  stateStoreType: writeDataFrameToCsv
+  isProfilingEnabled: false
+  partitionFiles: 0
+  path: ""
+  optional:
+    persistDataFrame: false
+    advanceOptions:
+      header: true
+    addRunIdColumn: false
+    enableDataReconciliation: false
+    enforceSchema: false
+  refreshInterval: None
+transformation:
+  - isDynamic: true
+    alias: Union_1
+    description: ""
+    sequence: 3
+    inputDataFrame1: Kafka_1
+    inputDataFrame2: Excel_1
+    optional:
+      persistDataFrame: false
+      mergeSchema: true
+    type: unionDataFrames
+controlPort:
+  dataQualityRules: {}
+timeout: 5
